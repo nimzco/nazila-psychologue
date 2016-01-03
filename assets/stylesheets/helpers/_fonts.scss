@@ -1,0 +1,16 @@
+/**
+ * Fonts
+ */
+.f-size-small { font-size: 0.7em; }
+.muted        { opacity: 0.6; }
+
+
+
+/**
+ * Alignments
+ */
+.text--center        { text-align: center!important; }
+.text--left          { text-align: left!important; }
+.text--right         { text-align: right!important; }
+
+.palm--text--left    { @include media-query(palm) { text-align: left!important; }}

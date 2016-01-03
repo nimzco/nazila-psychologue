@@ -1,0 +1,38 @@
+_______________________________________________________________________________
+
+
+PEOPLE
+
+Nazila Izadi
+Psychologue Nice
+http://nazila-psychologue.fr
+
+
+_______________________________________________________________________________
+
+
+TECHNOLOGY
+
+Ruby
+https://ruby-lang.org
+
+Sinatra
+http://sinatrarb.com
+
+Sprockets
+https://github.com/sstephenson/sprockets
+
+DigitalOcean
+https://www.digitalocean.com
+
+GitHub
+https://github.com
+
+
+_______________________________________________________________________________
+
+
+GRAPHICS
+
+Chaparral Pro by Adobe (font)
+https://typekit.com/fonts/chaparral-pro

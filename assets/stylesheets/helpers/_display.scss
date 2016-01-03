@@ -1,0 +1,41 @@
+/*
+ * Display
+ */
+.inline-block { display: inline-block; }
+.block        { display: block; }
+.opacity-90   { opacity: 0.9 }
+.opacity-80   { opacity: 0.8 }
+// Responsive
+.palm--block  { @include media-query(palm) { display: block !important; width: 100%!important; } }
+.lap--block   { @include media-query(lap)  { display: block !important; } }
+.lap-block    { @include media-query(lap)  { display: block !important; } }
+
+.hidden--palm       { @include media-query(palm) { display: none !important; } }
+.hidden--lap-and-up { @include media-query(lap-and-up) { display: none !important; } }
+
+
+/*
+ * Positioning
+ */
+.relative            { position: relative; }
+.absolute            { position: absolute; }
+.palm--static        { @include media-query(palm) { position: static!important; } }
+.fixed               { position: fixed;    }
+.hidden              { display: none;      } // /!\ DO NOT SET IMPORTANT otherwise js.show() won't work.
+.center-block        { margin-left: auto; margin-right: auto; }
+.west                { left       : 0 !important; }
+.east                { right      : 0 !important; }
+.north               { top        : 0 !important; }
+.south               { bottom     : 0 !important; }
+.v-top               { vertical-align: top!important; }
+.v-middle            { vertical-align: middle!important; }
+.v-bottom            { vertical-align: bottom!important; }
+
+
+
+/*
+ * Size
+ */
+.two-thirds { width: 66.66%;}
+.one-third  { width: 33.33%;}
+.one-half { width: 50%; }

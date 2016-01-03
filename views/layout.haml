@@ -1,0 +1,48 @@
+!!!
+%html
+  - if @home
+    %head{ prefix: "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# profile: http://ogp.me/ns/profile#"}
+  - else
+    %head{ prefix: "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"}
+  %meta{ charset: "utf-8"}
+
+  %title= (title = yield_content(:title); title = (title && !title.empty? ? title : 'Nazila Pin psychologue à Nice (06100)'); title)
+  %link{ href: "/assets/application.css", rel: "stylesheet" }
+  -# %link{ href: '/assets/favicon.ico', rel: 'shortcut icon', type: 'image/ico'  }
+  -# %link{ href: '/assets/favicon.svg', color: 'black', rel: 'mask-icon'  }
+
+  %link{ href: "/humans.txt", rel: "author", type: "text/plain" }
+  %meta{ content: "width=device-width, initial-scale=1, maximum-scale=1", name: "viewport" }
+  %meta{ content: "1203270129", property: "fb:admins" }
+  %meta{ content: "Nazila Pin", property: "og:site_name" }
+  %meta{ content: title, property: "og:title" }
+  - if @home
+    %meta{ content: "profile", property: "og:type" }
+    %meta{ content: "fr_FR", property: "og:locale" }
+    %link{ href: "http://nazila-psychologue.fr", rel: "canonical" }
+    %meta{ content: "http://nazila-psychologue.fr", property: "og:url" }
+    %meta{ content: "600", property: "og:image:width" }
+    %meta{ content: "600", property: "og:image:height" }
+    %meta{ content: "image/png", property: "og:image:type" }
+    %meta{ content: "Nazima", property: "profile:first_name" }
+    %meta{ content: "Pin", property: "profile:last_name" }
+    %meta{ content: "female", property: "profile:gender" }
+
+  :javascript
+    (function(d) {
+      var config = {
+        kitId: 'jcc6jod',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+
+  = yield_content :head
+
+  %body
+    = yield
+
+    %script{ src: "https://maps.googleapis.com/maps/api/js" }
+
+    = yield_content :scripts

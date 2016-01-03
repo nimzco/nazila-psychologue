@@ -1,0 +1,85 @@
+.header
+  .container
+    %h1.inline-block.two-thirds.v-bottom.palm--block>
+      Nazila PIN
+      %br
+      Psychologue clinicienne
+    .inline-block.palm--block.one-third.text--right.palm--text--left.v-bottom.palm--block>
+      %div
+        10 rue Marechal Joffre
+      %div
+        06000 Nice
+
+%hr
+
+.container
+  %p.flush
+    Bonjour,
+    %br
+    Nazila PIN psychologue clinicienne basée à Nice. J'interviens en tant que :
+  %ul
+    %li Aide personnelle en entretien individuel, en couple ou en famille — 50€ les 45min.
+    %li Animation de groupe de parole pour équipe médicale, au sein de société — 250€ la demi-journée.
+
+
+  .soft--bottom
+    .inline-block.one-half.v-top.hidden--palm>
+      %h3 Pour prendre rendez-vous :
+      %h4.push-half--bottom.flush--top
+        %u Appelez
+        ou
+        %u envoyez un e-mail
+        à
+    .inline-block.one-half.v-top.hidden--palm>
+      %h3 Pour vous rendre sur place :
+
+    .inline-block.one-half.v-top.palm--block>
+      .hidden--lap-and-up
+        %h3 Pour prendre rendez-vous :
+        %h4.push-half--bottom.flush--top
+          %u Appelez
+          ou
+          %u envoyez un e-mail
+          à
+      %div
+        %strong Nazila Pin
+      %div
+        Psychotherapeute à Nice
+      %div
+        07 68 05 19 11
+      %div
+        %a{ href: "mailto:contact@nazila-psychologue.fr?subject=Rendez-vous"} contact@nazila-psychologue.fr
+
+    .inline-block.one-half.v-top.palm--block>
+      .hidden--lap-and-up
+        %h3 Pour vous rendre sur place :
+      %p.flush
+        %strong 10 rue Marechal Joffre
+        %br
+        06000 Nice
+        %br
+        Bus : 3, 7, 9, 10, 22 ; Tram : T1 Jean Médecin
+
+.footer
+  .google-map#map
+
+
+- content_for :scripts do
+  :javascript
+    var my_place = new google.maps.LatLng(43.6993045, 7.2644728,17);
+    function initialize() {
+      var mapCanvas = document.getElementById('map');
+      var mapOptions = {
+        center: my_place,
+        zoom: 14,
+        scrollwheel: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      var marker = new google.maps.Marker({
+        position: my_place,
+        map: map
+      });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+

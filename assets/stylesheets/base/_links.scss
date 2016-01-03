@@ -1,0 +1,33 @@
+/**
+ * Links
+ */
+a {
+    color          : inherit;
+    transition     : all 50ms linear;
+    text-decoration: none;
+}
+
+a:active, a:visited {
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.link--white {
+    border-bottom  : 3px solid transparent;
+}
+
+.muted-link {
+    &, &:hover { border-bottom: none; }
+}
+
+.semi-muted-link {
+    & { border-bottom: none; }
+}
+
+.header-link {
+    font-family: inherit;
+}
