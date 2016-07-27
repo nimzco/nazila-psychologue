@@ -22,18 +22,19 @@
   -#   %li Animation de groupe de parole pour équipe médicale, au sein de société — 250€ la demi-journée.
 
   .soft--bottom
-    %h2 Groupes de parole :
-    %h4.flush--bottom Devenir maman : questions & angoisses
-    - if Date.today < Date.parse('2016-04-20')
-      %p Mercredi 20 avril 2016 à 15h — 30€ / personne
+    -# %h2 Groupes de parole :
+    -# %h4.flush--bottom Devenir maman : questions & angoisses
+    -# - if Date.today < Date.parse('2016-04-20')
+    -#   %p Mercredi 20 avril 2016 à 15h — 30€ / personne
+
   .soft--bottom
+    .text--center
+      %a.btn{ href: "http://www.mondocteur.fr/psychologue/nice/nazila-pin-6759.html" }
+        Prendre rendez-vous en ligne
+
     .inline-block.one-half.v-top.hidden--palm>
-      %h3 Pour prendre rendez-vous :
-      %h4.push-half--bottom.flush--top
-        %u Appelez
-        ou
-        %u envoyez un e-mail
-        à
+      %h3 Contact
+
     .inline-block.one-half.v-top.hidden--palm>
       %h3 Pour vous rendre sur place :
 

@@ -4,9 +4,10 @@
 @import "inuit/tools/*";
 @import "inuit/components/*";
 
-
 @import "base/*";
 @import "helpers/*";
+@import "objects/*";
+
 
 body {
     font-size: 20px;
@@ -20,7 +21,7 @@ body {
 
 hr {
     border: none;
-    border-bottom: 2px solid #FBEEEE;
+    border-bottom: 2px solid $pink;
 }
 
 .google-map {

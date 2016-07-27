@@ -19,8 +19,7 @@
 html, body {
     height     : 100%;
     width      : 100%;
-    font-family: "karmina", serif;
+    font-family: $typeface;
     background : #FFF;
-    // linear-gradient(to bottom, #FBEEEE, #FFFFFF 100%)
     font-size  : 15px;
 }

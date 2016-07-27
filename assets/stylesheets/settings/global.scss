@@ -1,8 +1,8 @@
 /**
  * Fonts
  */
-$typeface: serif;
-
+// $typeface: serif;
+$typeface: 'Scope One', serif;
 
 
 /**
@@ -11,3 +11,5 @@ $typeface: serif;
 $base-spacing-unit: 20px!default;
 $half-spacing-unit: 12px!default;
 $quarter-spacing-unit: $half-spacing-unit / 2!default;
+
+$pink: #FBEEEE;
