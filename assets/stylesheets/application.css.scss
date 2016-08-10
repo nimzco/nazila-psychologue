@@ -8,10 +8,19 @@
 @import "helpers/*";
 @import "objects/*";
 
-
 body {
     font-size: 20px;
+    background-image: linear-gradient(to bottom, $pink, #FFFFFF 100%);
+    background-size: 100% 400px;
+    background-repeat  : no-repeat;
+    background-position: top;
 }
+  .body-wrapper {
+    background-image   : url(background.png);
+    background-repeat  : no-repeat;
+    background-position: top right;
+    background-size    : 200px 418px;
+  }
 
 .container {
     margin   : auto;

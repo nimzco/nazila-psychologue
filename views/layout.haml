@@ -32,7 +32,8 @@
   = yield_content :head
 
   %body
-    = yield
+    .body-wrapper
+      = yield
 
     %script{ src: "https://maps.googleapis.com/maps/api/js" }
 
