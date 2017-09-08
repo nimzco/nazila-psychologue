@@ -1,12 +1,22 @@
 @import "settings/global";
 
-@import "inuit/settings/*";
-@import "inuit/tools/*";
-@import "inuit/components/*";
+@import "inuit/settings/settings.defaults";
+@import "inuit/settings/settings.responsive";
 
-@import "base/*";
-@import "helpers/*";
-@import "objects/*";
+@import "inuit/tools/tools.functions";
+@import "inuit/tools/tools.responsive";
+@import "inuit/components/trumps.spacing";
+
+@import "base/header";
+@import "base/headings";
+@import "base/links";
+@import "base/lists";
+@import "base/page";
+@import "base/paragraphs";
+
+@import "helpers/fonts";
+
+@import "objects/buttons";
 
 body {
     font-size: 20px;
