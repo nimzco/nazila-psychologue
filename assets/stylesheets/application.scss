@@ -1,54 +1,55 @@
-@import "settings/global";
+@import 'settings/global';
 
-@import "inuit/settings/settings.defaults";
-@import "inuit/settings/settings.responsive";
+@import 'inuit/settings/settings.defaults';
+@import 'inuit/settings/settings.responsive';
 
-@import "inuit/tools/tools.functions";
-@import "inuit/tools/tools.responsive";
-@import "inuit/components/trumps.spacing";
+@import 'inuit/tools/tools.functions';
+@import 'inuit/tools/tools.responsive';
+@import 'inuit/components/trumps.spacing';
 
-@import "base/header";
-@import "base/headings";
-@import "base/links";
-@import "base/lists";
-@import "base/page";
-@import "base/paragraphs";
+@import 'base/headings';
+@import 'base/links';
+@import 'base/lists';
+@import 'base/page';
+@import 'base/paragraphs';
 
-@import "helpers/fonts";
+@import 'helpers/fonts';
 
-@import "objects/buttons";
+@import 'objects/buttons';
+@import 'objects/menu';
 
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    background-image: linear-gradient(to bottom, $pink, #FFFFFF 100%);
-    background-size: 100% 400px;
-    background-repeat  : no-repeat;
-    background-position: top;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  background-image: linear-gradient(to bottom, $pink, #ffffff 100%);
+  background-size: 100% 400px;
+  background-repeat: no-repeat;
+  background-position: top;
 }
-  .body-wrapper {
-    background-image   : url(background.png);
-    background-repeat  : no-repeat;
-    background-position: top right;
-    background-size    : 200px 418px;
-  }
+.body-wrapper {
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 200px 418px;
+}
 
 .container {
-    margin   : auto;
-    max-width: 800px;
-    padding  : 1em;
+  margin: auto;
+  max-width: 800px;
+  padding: 1em;
 }
 
 hr {
-    border: none;
-    border-bottom: 2px solid $pink;
+  border: none;
+  border-bottom: 2px solid $pink;
+  margin: 1.3em 0;
 }
 
 .google-map {
-    height: 400px;
+  height: 400px;
 }
 
 img {
-    border-radius: 2px
+  border-radius: 2px;
 }

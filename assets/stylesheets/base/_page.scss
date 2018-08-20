@@ -16,9 +16,10 @@
  *    render text using sub-pixel anti-aliasing.
  */
 
-html, body {
-    width      : 100%;
-    font-family: $typeface;
-    background : #FFF;
-    font-size  : 15px;
+html,
+body {
+  width: 100%;
+  font-family: $typeface;
+  background: #fff;
+  font-size: 15px;
 }

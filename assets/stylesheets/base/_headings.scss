@@ -1,24 +1,22 @@
-/**
- * Headings 1–6.
- */
-
-h1, h2, h3, h4, h5, h6 {
-}
-
 h1 {
-    font-weight: 400;
-    font-size  : 3rem;
-    margin     : 0;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 0;
 }
 
 h2 {
-    font-weight  : 300;
-    font-size    : 2rem;
-    margin-bottom: 0.3em;
-    color        : #555;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 0.3em;
+  color: #555;
 }
 
 h3 {
-    color        : #555;
-    margin-bottom: 0.5em;
+  color: #555;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  color: #555;
+  margin: 0;
 }
